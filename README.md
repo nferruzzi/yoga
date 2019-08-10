@@ -1,4 +1,38 @@
-# Yoga [![CocoaPods](https://img.shields.io/cocoapods/v/YogaKit.svg)](http://cocoapods.org/pods/YogaKit) [![npm](https://img.shields.io/npm/v/yoga-layout.svg)](https://www.npmjs.com/package/yoga-layout) [![bintray](https://img.shields.io/bintray/v/facebook/maven/com.facebook.yoga:yoga.svg)](https://bintray.com/facebook/maven/com.facebook.yoga%3Ayoga/_latestVersion) [![NuGet](https://img.shields.io/nuget/v/Facebook.Yoga.svg)](https://www.nuget.org/packages/Facebook.Yoga)
+# Yoga [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods](https://img.shields.io/cocoapods/v/YogaKit.svg)](http://cocoapods.org/pods/YogaKit) [![npm](https://img.shields.io/npm/v/yoga-layout.svg)](https://www.npmjs.com/package/yoga-layout) [![bintray](https://img.shields.io/bintray/v/facebook/maven/com.facebook.yoga:yoga.svg)](https://bintray.com/facebook/maven/com.facebook.yoga%3Ayoga/_latestVersion) [![NuGet](https://img.shields.io/nuget/v/Facebook.Yoga.svg)](https://www.nuget.org/packages/Facebook.Yoga)
+
+## for iOS/macOS/tvOS developers
+### cocoapods
+```
+use_frameworks!
+
+target 'YogaKitDemo' do
+  pod 'YogaKit', :git => 'https://github.com/cntrump/yoga.git', :branch => 'develop'
+end
+
+target 'YGKitDemo' do
+  pod 'YogaKit', :git => 'https://github.com/cntrump/yoga.git', :branch => 'develop'
+end
+
+target 'YGTVDemo' do
+  pod 'YogaKit', :git => 'https://github.com/cntrump/yoga.git', :branch => 'develop'
+end
+```
+
+### Carthage
+```
+github "cntrump/yoga" "develop"
+```
+
+### add yoga to your project
+Objective-C
+```objc
+@import YogaKit;
+```
+
+Swift
+```swift
+import YogaKit
+```
 
 ## Building
 Yoga builds with [buck](https://buckbuild.com). Make sure you install buck before contributing to Yoga. Yoga's main implementation is in C++, with bindings to supported languages and frameworks. When making changes to Yoga please ensure the changes are also propagated to these bindings when applicable.
