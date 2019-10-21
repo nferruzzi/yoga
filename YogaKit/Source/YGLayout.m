@@ -366,6 +366,8 @@ static YGSize YGMeasureView(
                                           .height = constrainedHeight,
                                       }];
 #endif
+    sizeThatFits.width = ceil(sizeThatFits.width);
+    sizeThatFits.height = ceil(sizeThatFits.height);
   }
 
   return (YGSize) {
